@@ -24,6 +24,9 @@ class stat_generator
 private:
     std::string filename;
     std::string source;
-
+public:
+    void open_file(const std::string& filename);
+    const std::string& get_source();
+    void display_source();
 };
 #endif
